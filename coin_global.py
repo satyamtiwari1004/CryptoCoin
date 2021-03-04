@@ -20,7 +20,7 @@ try:
   response = session.get(url, params=parameters)
   result=response.json()
   data1 = json.dumps(result,sort_keys=True,indent=1)
-    print("Rank      Name           (Symbol)        Date        price")
+  print("Rank      Name           (Symbol)        Date        price")
   for cryptoc in result['data']:
       rank=cryptoc['id']
       names=cryptoc['name']
